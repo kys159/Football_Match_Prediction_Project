@@ -16,15 +16,15 @@
 ## :file_folder: 파일 구조
 ```
 ├── Football_predict_Project/
-   ├── Crawling1.py
-   ├── Crawling2.py
+   ├── fivethirtyeight_crawling.py
+   ├── understat_crawling.py
    ├── Pr+eprocessing1.R
    ├── Preprocessing2.R
    └── Modeling.R
 ```
  - `Crawling1.py` 해외축구 경기 결과를 제공하는 Fivethirtyeight 사이트의 경기결과 값과 예측값을 크롤링 하는 파일입니다.
  - `Crawling2.py` 해외축구 경기 결과를 제공하는 Understat 사이트의 경기결과 값, 선수기록, 슈팅기록 등의 값을 크롤링 하는 파일입니다.
- - `Pr+eprocessing1.R` 데이터분석 전 데이터를 정리하는 파일입니다. 각 데이터를 합치고 결측치 대체와 각 리그별 이름을 영어로 통일시키는 등의 전처리 파일입니다.
+ - `Preprocessing1.R` 데이터분석 전 데이터를 정리하는 파일입니다. 각 데이터를 합치고 결측치 대체와 각 리그별 이름을 영어로 통일시키는 등의 전처리 파일입니다.
  - `Preprocessing2.R` 미래 경기를 예측하므로, 각 결과를 Lag하는 등의 Feature Engineering을 진행하는 파일입니다.
  - `Modeling.R` 전처리를 한 최종데이터를 활용하여 모델링하는 파일입니다.
  

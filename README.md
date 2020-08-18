@@ -41,7 +41,7 @@
  
  
  #### &nbsp;&nbsp; 1-2. 무승부 예측<br>
- &nbsp;&nbsp;&nbsp;&nbsp; 본 데이터는 무승부 수가 비교적 적은 Imbalance한 데이터입니다. 또한 이를 Sampling하여 balance하게 맞춰준다고 해도 무승부가 나는 경기의 특성을 잡아내는 것은 상당히 어렵습니다. 따라서, 모델링 과정에서 단순히 MultiClass Classification을 진행하는 것이 아닌 HOME팀의 승리인지 아닌지, AWAY팀의 승리인지 아닌지를 예측하여 HOME팀의 승리가 아니고 AWAY팀의 승리도 아닌 경우를 무승부로 예측하는 알고리즘을 생성하였습니다. 또한 단순히 SoftMax를 활용하는 것이 아닌 SoftProb를 이용하여 최적의 Threshold를 찾는 과정을 거쳐 약 53~54% 정도의 Accuracy를 보이는 모델을 구축했습니다.
+ &nbsp;&nbsp;&nbsp;&nbsp; 본 데이터는 무승부 수가 비교적 적은 Imbalance한 데이터입니다. 또한 이를 Sampling하여 balance하게 맞춰준다고 해도 무승부가 나는 경기의 특성을 잡아내는 것은 상당히 어렵습니다. 따라서, 모델링 과정에서 단순히 MultiClass Classification을 진행하는 것이 아닌 **HOME팀의 승리인지 아닌지**, **AWAY팀의 승리인지 아닌지를 예측**하여 HOME팀의 승리가 아니고 AWAY팀의 승리도 아닌 경우를 무승부로 예측하는 알고리즘을 생성하였습니다. 또한 단순히 SoftMax를 활용하는 것이 아닌 SoftProb를 이용하여 **최적의 Threshold를 찾는 과정**을 거쳐 **약 53~54%** 정도의 Accuracy를 보이는 모델을 구축했습니다.
  
 <br>
 
